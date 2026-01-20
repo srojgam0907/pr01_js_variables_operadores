@@ -54,8 +54,17 @@ botonA2.addEventListener("click", function(event){
 
 //boton A3
 botonA3.addEventListener("click", function(event){
+    let x=5, y= x++;
 
+    mensajeA3.innerHTML= "X= " + x + "<br>Y= " + y + "<br>";
 
+    x=5;
+    y=++x;
+
+    mensajeA3.innerHTML+= "<br>X= " + x + "<br>Y= " + y + "<br>";
+
+    mensajeA3.innerHTML+= "<br>" + x+x*y + "<br>";
+    mensajeA3.innerHTML+= "<br>" + (x+x)*y + "<br>";
 
 });
 
