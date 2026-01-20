@@ -30,8 +30,25 @@ botonA1.addEventListener("click", function(event){
 
 //boton A2
 botonA2.addEventListener("click", function(event){
-    
+    let edad= 20, carnet= false, mayor= false;
 
+    if(edad >=18) {
+        carnet= true;
+        mayor= true;
+
+    } else {
+        carnet= false;
+        mayor= false;
+    }
+
+    mensajeA2.innerHTML= "Edad: " + edad + "<br>Mayor de edad: " + mayor + "<br>Carnet: " + carnet + "<br>";
+
+    if(carnet) {
+        mensajeA2.innerHTML+= "Si puede conducir";
+
+    } else {
+        mensajeA2.innerHTML+= "No puede conducir";
+    }
 
 });
 
