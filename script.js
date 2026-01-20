@@ -7,7 +7,7 @@ const botonA4= document.querySelector("#btnA4");
 //MENSAJES
 
 
-const mensajeA3= document.querySelector("#a3");
+
 const mensajeA4= document.querySelector("#a4");
 
 //EVENTOS
@@ -54,6 +54,7 @@ botonA2.addEventListener("click", function(event){
 
 //boton A3
 botonA3.addEventListener("click", function(event){
+    const mensajeA3= document.querySelector("#a3");
     let x=5, y= x++;
 
     mensajeA3.innerHTML= "X= " + x + "<br>Y= " + y + "<br>";
