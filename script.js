@@ -70,7 +70,11 @@ botonA3.addEventListener("click", function(event){
 
 //boton A4
 botonA4.addEventListener("click", function(event){
+    let text= "hola";
+    let numero= 4;
+    let resultado= `${text} ${numero}`;
 
-
+    mensajeA4.innerHTML= resultado + "<br>";
+    mensajeA4.innerHTML+= "<br>" + resultado.typeof;
 
 });
