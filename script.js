@@ -5,7 +5,7 @@ const botonA3= document.querySelector("#btnA3");
 const botonA4= document.querySelector("#btnA4");
 
 //MENSAJES
-const mensajeA1= document.querySelector("#a1");
+
 const mensajeA2= document.querySelector("#a2");
 const mensajeA3= document.querySelector("#a3");
 const mensajeA4= document.querySelector("#a4");
@@ -14,17 +14,15 @@ const mensajeA4= document.querySelector("#a4");
 
 //boton A1
 botonA1.addEventListener("click", function(event){
-    let precio= 10, cantidad= 5, total;
+    const mensajeA1= document.querySelector("#a1");
+    const precio= 10; 
+    let cantidad= 5;
 
-    total= precio*cantidad;
-
-    mensajeA1.innerHTML= "Antes:<br>Precio: " + precio + "<br>Cantidad: " + cantidad + "<br>Total: " + total + "<br>";
+    mensajeA1.innerHTML= "Antes:<br>Precio: " + precio + "<br>Cantidad: " + cantidad + "<br>Total: " + precio*cantidad + "<br>";
 
     cantidad++;
 
-    total= precio*cantidad;
-
-    mensajeA1.innerHTML += "<br>Despues: <br>Precio: " + precio + "<br>Cantidad: " + cantidad + "<br>Total: " + total + "<br>";
+    mensajeA1.innerHTML += "<br>Despues: <br>Precio: " + precio + "<br>Cantidad: " + cantidad + "<br>Total: " + precio*cantidad + "<br>";
 
 });
 
