@@ -4,12 +4,6 @@ const botonA2= document.querySelector("#btnA2");
 const botonA3= document.querySelector("#btnA3");
 const botonA4= document.querySelector("#btnA4");
 
-//MENSAJES
-
-
-
-const mensajeA4= document.querySelector("#a4");
-
 //EVENTOS
 
 //boton A1
@@ -71,6 +65,7 @@ botonA3.addEventListener("click", function(event){
 
 //boton A4
 botonA4.addEventListener("click", function(event){
+    const mensajeA4= document.querySelector("#a4");
     let text= "hola";
     let numero= 4;
     let resultado= `${text} ${numero}`;
