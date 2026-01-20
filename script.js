@@ -6,7 +6,7 @@ const botonA4= document.querySelector("#btnA4");
 
 //MENSAJES
 
-const mensajeA2= document.querySelector("#a2");
+
 const mensajeA3= document.querySelector("#a3");
 const mensajeA4= document.querySelector("#a4");
 
@@ -28,7 +28,9 @@ botonA1.addEventListener("click", function(event){
 
 //boton A2
 botonA2.addEventListener("click", function(event){
-    let edad= 20, carnet= false, mayor= false;
+    const mensajeA2= document.querySelector("#a2");
+    const edad= 20;
+    let carnet= false, mayor= false;
 
     if(edad >=18) {
         carnet= true;
